@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Compling C++ using g++"
+
+g++ -o openshiftcplussample ./*.cxx
