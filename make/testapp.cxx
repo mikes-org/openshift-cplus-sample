@@ -9,7 +9,7 @@ using namespace std;
 
 int main (int argc, char *argv[])
 {
-  cout << "Starting Sample C++ cmake app!" << endl;
+  cout << "Starting Sample C++ Makefile app!" << endl;
   while (true) {
      cout << "OpenShift C++ Sample App running, Sleeping for a minute" << endl;
      usleep(1000  * 1000 * 60);
