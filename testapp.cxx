@@ -6,8 +6,9 @@
 
 int main (int argc, char *argv[])
 {
+  fprintf(stdout, "Starting sample app\n");
   while (true) {
-     printf("OpenShift C++ Sample App running, Sleeping for a minute\n");
+     fprintf(stdout,"OpenShift C++ Sample App running, Sleeping for a minute\n");
      usleep(1000  * 1000 * 60);
   }
   return 0;
