@@ -1,2 +1,2 @@
-echo "Starting sample app from run.sh"
+echo "Starting sample app built using make using run.sh"
 ./openshiftcplussample

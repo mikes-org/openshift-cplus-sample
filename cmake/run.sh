@@ -1,2 +1,2 @@
-echo "Starting sample app from run.sh"
+echo "Starting sample app build from cmake using run.sh"
 ./openshiftcplussample
