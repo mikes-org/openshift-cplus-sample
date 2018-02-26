@@ -9,10 +9,9 @@ using namespace std;
 
 int main (int argc, char *argv[])
 {
-  cout << "Hello, World!" << endl;
-  fprintf(stdout, "Starting sample app\n");
+  cout << "Starting Sample C++ cmake app!" << endl;
   while (true) {
-     fprintf(stdout,"OpenShift C++ Sample App running, Sleeping for a minute\n");
+     cout << "OpenShift C++ Sample App running, Sleeping for a minute" << endl;
      usleep(1000  * 1000 * 60);
   }
   return 0;
