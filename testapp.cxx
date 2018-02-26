@@ -3,9 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <iostream>
+
+using namespace std;
 
 int main (int argc, char *argv[])
 {
+  cout << "Hello, World!" << endl;
   fprintf(stdout, "Starting sample app\n");
   while (true) {
      fprintf(stdout,"OpenShift C++ Sample App running, Sleeping for a minute\n");
