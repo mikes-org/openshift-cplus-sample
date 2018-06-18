@@ -5,15 +5,3 @@ node('master')
    println "Master";
 }
 
-node('cmake-slave')
-{
-  stage('checkout')
-  {
-     checkout scm;
-  }
-
-  stage('make')
-  {
-    cmake .
-  }
-}
