@@ -15,8 +15,10 @@ node ('cmake-slave')
   }
   stage ('build')
   {
-     sh "ls -lrt; pwd"
-     sh "cmake ."
+     dir("openshift-cplus-sample/cmake") {
+       sh "ls -lrt; pwd"
+       sh "cmake ."
+    }
   }
 }
 
