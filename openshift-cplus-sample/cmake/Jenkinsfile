@@ -13,5 +13,10 @@ node ('cmake-slave')
   { 
     checkout scm
   }
+  stage ('build')
+  {
+     sh "ls -lrt; pwd"
+     sh "cmake ."
+  }
 }
 
