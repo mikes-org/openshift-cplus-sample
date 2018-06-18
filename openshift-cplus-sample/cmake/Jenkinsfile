@@ -2,13 +2,19 @@
 
 node('master')
 {
- scm;
 }
 
 node('cmake-slave')
 {
+  stage('checkout')
+  {
+     checkout scm;
+  }
 
-  cmake .
+  stage ('make')
+  {
+    cmake .
+  }
 }
 
 
