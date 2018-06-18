@@ -2,6 +2,7 @@
 
 node('master')
 {
+   println "Master";
 }
 
 node('cmake-slave')
@@ -11,10 +12,8 @@ node('cmake-slave')
      checkout scm;
   }
 
-  stage ('make')
+  stage('make')
   {
     cmake .
   }
 }
-
-
