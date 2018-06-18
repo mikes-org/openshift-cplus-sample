@@ -7,8 +7,11 @@ node('master')
 
 node ('cmake-slave')
 {
-
-
   println "cmake slave";
+
+  stage('checkout')
+  { 
+    checkout scm
+  }
 }
 
