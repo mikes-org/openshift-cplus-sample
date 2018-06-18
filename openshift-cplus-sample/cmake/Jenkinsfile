@@ -5,3 +5,10 @@ node('master')
    println "Master";
 }
 
+node ('cmake-slave')
+{
+
+
+  println "cmake slave";
+}
+
