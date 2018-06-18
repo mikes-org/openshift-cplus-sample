@@ -1,0 +1,14 @@
+#!/usr/bin/groovy
+
+node('master')
+{
+ scm;
+}
+
+node('cmake-slave')
+{
+
+  cmake .
+}
+
+
